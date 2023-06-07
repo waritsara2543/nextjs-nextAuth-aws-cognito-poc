@@ -1,7 +1,9 @@
 "use client";
 import { Session } from "next-auth";
 import { signIn, signOut } from "next-auth/react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { log } from "console";
+import { useEffect } from "react";
 
 export default function LoginButton({ session }: { session: Session | null }) {
   const [tmp, setTmp] = useState(false);
@@ -17,7 +19,13 @@ export default function LoginButton({ session }: { session: Session | null }) {
   //   return;
   // }, []);
 
+  // useEffect(() => {
+  //   console.log("sessionX", sessionx);
+  // }, []);
+
   if (session && session.user) {
+    console.log("sessipn =>", session);
+
     return (
       <>
         Signed in as {session.user.email} <br />
@@ -28,9 +36,9 @@ export default function LoginButton({ session }: { session: Session | null }) {
   return (
     <>
       Not signed in <br />
-      {/* <button onClick={() => signIn("cognito")}>Sign in</button> */}
+      <button onClick={() => signIn("cognito")}>Sign in</button>
       {/* {signInhandler} */}
-      {signIn("cognito")}
+      {/* {signIn("cognito")} */}
     </>
   );
 }
