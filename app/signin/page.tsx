@@ -9,9 +9,18 @@ export default function Signin() {
       <button
         onClick={() => {
           signIn("cognito");
+          // send api login
         }}
       >
         login
+      </button>
+      <button
+        onClick={() => {
+          signIn("cognito");
+          // send api signup
+        }}
+      >
+        signup
       </button>
     </div>
   );

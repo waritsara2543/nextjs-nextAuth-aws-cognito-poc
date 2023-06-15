@@ -51,3 +51,5 @@ export default function LoginButton({ session }: { session: Session | null }) {
 //https://my-super-app-poc-authentication-page.auth.ap-southeast-1.amazoncognito.com/logout?response_type=code&client_id=3itmcimrr2cec3ak7v97v124v6redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fauth%2Fcallback%2Fcognito&state=XP5sJJWnWYw_kTT-fBwz5ewBq6tCveX8KRrSYNPg1Ig&nonce=kj8ONyAvfyAUOPEwQlfRIsSJCGfLDC-D8dqgFsQd81k&scope=openid
 
 //https://my-super-app-poc-authentication-page.auth.ap-southeast-1.amazoncognito.com/login?client_id=3itmcimrr2cec3ak7v97v124v6&scope=openid&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fauth%2Fcallback%2Fcognito&state=4OCgoYqMjKUhKVxPUJl91YHvAMbLa5Rqdbo5pxfwZgw&nonce=aidlkkAdsw0ZSSKwOUqBB2JgHeKcox-4wzOCOVDuQsI&code_challenge=_CNviVNB9yQaK0pn5ZwSWjntd5UI0wMXEEqq1UWPpq8&code_challenge_method=S256
+
+//https://<YOUR_DOMAIN>.auth.<REGION>.amazoncognito.com/oauth2/authorize?identity_provider=Google&redirect_uri=<REDIRECT_URI>&response_type=TOKEN&client_id=<CLIENT_ID>&scope=openid
